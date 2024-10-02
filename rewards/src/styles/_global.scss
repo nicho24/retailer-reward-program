@@ -1,0 +1,17 @@
+// _global.scss
+@import './_variable';
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: $text-color;
+  }
+  
+  h1, h2, h3 {
+    color: $primary-color;
+  }
+  
+  ul {
+    padding-left: $spacing-medium;
+  }

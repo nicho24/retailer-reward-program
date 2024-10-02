@@ -1,0 +1,40 @@
+// rewards.scss
+
+@import './_variable';
+@import './_mixin';
+
+.rewards-container {
+    padding: $spacing-large;
+    background-color: $secondary-color;
+    @include flex-center;
+    flex-direction: column;
+  }
+  
+  .customer-card {
+    @include card;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: $spacing-medium;
+  }
+  
+  .customer-header {
+    font-size: 1.2rem;
+    color: $primary-color;
+  }
+  
+  .points-summary {
+    margin-top: $spacing-small;
+    font-size: 1rem;
+    color: $text-color;
+  }
+  
+  .month-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .month-list-item {
+    margin-top: $spacing-small;
+    font-size: 0.9rem;
+    color: $text-color;
+  }
