@@ -12,10 +12,15 @@
     "sass": "^1.79.4",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^14.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+   "test": "react-scripts test jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

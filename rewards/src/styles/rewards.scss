@@ -6,8 +6,9 @@
 .rewards-container {
     padding: $spacing-large;
     background-color: $secondary-color;
-    @include flex-center;
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   .customer-card {
@@ -37,4 +38,67 @@
     margin-top: $spacing-small;
     font-size: 0.9rem;
     color: $text-color;
+  }
+
+  .error {
+    color: red;
+    font-size: 1.2rem;
+  }
+  .rewards-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+  
+    th {
+      background-color: #f2f2f2;
+    }
+  
+    .monthly-points-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+  
+      th, td {
+        border: 1px solid #ddd;
+        padding: 4px;
+        text-align: left;
+      }
+    }
+  }
+//   spinner
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 100px auto;
+  
+    .double-bounce1, .double-bounce2 {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #333;
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: bounce 2.0s infinite ease-in-out;
+    }
+  
+    .double-bounce2 {
+      animation-delay: -1.0s;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(0);
+    } 50% {
+      transform: scale(1);
+    }
   }
